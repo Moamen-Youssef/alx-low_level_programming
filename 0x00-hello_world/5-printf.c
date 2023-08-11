@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * printing some text
+ * main - printing some text
  * main - Prints "with proper grammar, but the outcome is a piece of art,"
- * Return: 0 
+ * Return:0 
  */
 int main(void)
 {
