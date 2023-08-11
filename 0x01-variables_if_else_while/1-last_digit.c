@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *  main - check last digigt  
- *  Return:0  
+ *  main - check last digigt
+ *  Return:0
 */
 
 /* betty style doc for function main goes there */
