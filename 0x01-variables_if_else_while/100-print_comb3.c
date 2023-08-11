@@ -3,7 +3,7 @@
  * main - print alphabet in reverse
  * Return:0
 */
-int main()
+int main(void)
 {
 int num1;
 int num2;
@@ -15,7 +15,7 @@ if (num1 != num2 && num2 > num1)
 {
 putchar(num1);
 putchar(num2);
-if(num1 != '8')
+if (num1 != '8')
 {
 putchar(',');
 putchar(' ');
