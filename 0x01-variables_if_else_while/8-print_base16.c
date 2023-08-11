@@ -3,7 +3,7 @@
  * main - print alphabet in reverse
  * Return:0
 */
-int main()
+int main(void)
 {
 char ch;
 int num;
