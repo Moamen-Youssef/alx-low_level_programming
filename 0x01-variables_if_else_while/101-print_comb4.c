@@ -18,7 +18,7 @@ if (num1 != (num2 && num3) && num2 > num1 && num3 > num2)
 putchar(num1);
 putchar(num2);
 putchar(num3);
-if(num1 != '7')
+if (num1 != '7')
 {
 putchar(',');
 putchar(' ');
