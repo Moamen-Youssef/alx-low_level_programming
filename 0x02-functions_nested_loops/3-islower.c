@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include "main.h"
 /**
  * main - print  if alphabet is lower
@@ -12,7 +13,6 @@ return (1);
 }
 else 
 {
-printf("0");
 return (0);
 }
 }
