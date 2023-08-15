@@ -15,9 +15,3 @@ else
 return (0);
 }
 }
-
-int main (void)
-{
-_isalpha('t');
-return(0);
-}

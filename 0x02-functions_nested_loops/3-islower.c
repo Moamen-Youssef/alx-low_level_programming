@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 /**
  * main - print  if alphabet is lower
  * Return:0
@@ -15,10 +15,4 @@ else
 printf("0");
 return (0);
 }
-}
-
-int main (void)
-{
-_islower('t');
-return(0);
 }
