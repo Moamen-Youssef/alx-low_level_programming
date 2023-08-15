@@ -6,13 +6,13 @@
 */
 void jack_bauer(void)
 {
-int hrs =0;
+int hrs = 0;
 int mins;
-while (hrs <24)
+while (hrs < 24)
 {
-for (mins = 0; mins <=59; mins++)
+for (mins = 0; mins <= 59; mins++)
 {
-if ( hrs < 10 )
+if (hrs < 10)
 {
 printf("0%d", hrs);
 }

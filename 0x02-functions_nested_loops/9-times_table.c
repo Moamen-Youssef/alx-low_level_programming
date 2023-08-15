@@ -9,12 +9,11 @@ int table =0;
 while (table <= 9)
 {
 printf(" 0, ");
-int i;
 int counter = table;
 char comma;
-for (i=0; i<9; i++)
+for (int i = 0; i < 9; i++)
 {
-if ( i <8)
+if ( i < 8)
 {
 comma = ',';
 }
