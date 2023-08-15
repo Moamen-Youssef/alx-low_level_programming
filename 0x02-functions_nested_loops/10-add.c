@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * add(first num , second num) - add two nums
+ * add - add two nums
+ * @n1: first number
+ * @n2: second number
  * Return:result
 */
 int add(int n1, int n2)
