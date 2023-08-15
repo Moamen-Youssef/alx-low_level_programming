@@ -2,16 +2,17 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * main - print  if alphabet is lower
+ * _islower() - print  if alphabet is lower
+ * @c: the alphaet 
  * Return:0
 */
 int _islower(int c)
 {
-if (islower(c) == 2)
+if (islower(c))
 {
-return (1); 
+return (1);
 }
-else 
+else
 {
 return (0);
 }
