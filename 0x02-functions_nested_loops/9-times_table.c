@@ -1,3 +1,4 @@
+
 #include "main.h"
 /**
  * times_table - print 10 times table
@@ -10,7 +11,7 @@ int i;
 int counter;
 while (table <= 9)
 {
-printf(" 0, ");
+printf("0, ");
 counter = table;
 for (i = 0; i < 9; i++)
 {
