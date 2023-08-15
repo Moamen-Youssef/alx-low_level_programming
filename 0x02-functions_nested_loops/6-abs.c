@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * _abc - print alphabets
+ * _abs - print alphabets
  * @c: the chars
  * Return:abc
 */
