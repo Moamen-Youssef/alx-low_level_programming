@@ -6,12 +6,14 @@
 void times_table(void)
 {
 int table =0;
+int i;
+int counter;
 while (table <= 9)
 {
 printf(" 0, ");
-int counter = table;
+counter = table;
 char comma;
-for (int i = 0; i < 9; i++)
+for (i = 0; i < 9; i++)
 {
 if ( i < 8)
 {
