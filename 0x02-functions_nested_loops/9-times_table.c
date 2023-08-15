@@ -5,32 +5,28 @@
 */
 void times_table(void)
 {
-int table =0;
+int table = 0;
 int i;
 int counter;
-char comma;
 while (table <= 9)
 {
-printf(" 0, ");
+printf(" 0,");
 counter = table;
 for (i = 0; i < 9; i++)
 {
-if (i < 8)
-{
-comma = ',';
-}
-else 
-{
-comma = ' ';
-}
 if (counter < 10)
 {
-printf(" %d%c ", counter, comma);
+printf(" %d", counter);
 }
 else
-printf("%d%c ", counter, comma);
+printf("%d", counter);
 counter = counter + table;
+if ( i < 8)
+{
+printf(", ");
 }
+}
+
 printf("\n");
 table++;
 }
