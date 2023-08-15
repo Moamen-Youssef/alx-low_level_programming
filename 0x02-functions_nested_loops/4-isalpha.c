@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - print  if alphabet is lower
+ * _isalpha - print  if alphabet is lower
+ * @c: alphabet
  * Return:0
 */
 int _isalpha(int c)
 {
-if (isalpha(c) == 1 || isalpha(c) == 2 )
+if (isalpha(c))
 {
 return (1); 
 }

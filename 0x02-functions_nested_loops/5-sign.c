@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - print  if alphabet is lower
- * Return:0
+ * print_sign - print  sign
+ * @n: the number
+ * Return:0or1
 */
 int print_sign(int n)
 {
@@ -21,10 +22,4 @@ else
 printf("0");
 return (0);
 }
-}
-
-int main (void)
-{
-print_sign('y');
-return(0);
 }
