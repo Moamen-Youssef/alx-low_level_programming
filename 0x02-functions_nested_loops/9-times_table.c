@@ -8,11 +8,11 @@ void times_table(void)
 int table =0;
 int i;
 int counter;
+char comma;
 while (table <= 9)
 {
 printf(" 0, ");
 counter = table;
-char comma;
 for (i = 0; i < 9; i++)
 {
 if ( i < 8)
