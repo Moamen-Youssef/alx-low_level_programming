@@ -9,18 +9,16 @@ int print_sign(int n)
 {
 if (n > 0)
 {
-printf("%+d\n", n);
-return (1);
+printf("%+1", n);
 }
 else if (n < 0)
 {
-printf("%d\n", n);
-return (-1);
+printf("-1", n);
 }
 else
 {
-printf("%d\n", n);
-return (0);
+printf("0", n);
 }
 printf("\n");
+return 0;
 }
