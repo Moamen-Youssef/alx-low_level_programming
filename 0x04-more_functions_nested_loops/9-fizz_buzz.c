@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * print_square - Fizz Buzz code
- * Return:nothing
+ * main - Fizz Buzz code
+ * Return:0
 */
 int main(void)
 {
