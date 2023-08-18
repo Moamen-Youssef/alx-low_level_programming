@@ -3,7 +3,7 @@
  * print_square - Fizz Buzz code
  * Return:nothing
 */
-void main(void)
+int main(void)
 {
 int i;
 for (i = 1; i <= 100; i++)
