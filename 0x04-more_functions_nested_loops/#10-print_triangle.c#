@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * print_triangle - print_triangle
- * @size: number of windows
  * Return:nothing
 */
 void print_triangle(int size)
