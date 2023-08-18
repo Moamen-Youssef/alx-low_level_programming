@@ -14,11 +14,11 @@ if (size <= 0)
 _putchar(' ');
 return;
 }
-else 
+else
 {
 int i;
 int j;
-for (j = 0; j < counter -1; j++)
+for (j = 0; j < counter - 1; j++)
 {
 _putchar(' ');
 }

@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_diagonal - print diagonal
- * @n: number of diagonal \'s 
+ * @n: number of diagonal back's
  * Return:nothing
 */
 void print_diagonal(int n)

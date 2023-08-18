@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_square - print diagonal
- * @size: number of diagonal \'s 
+ * @size: number of diagonal back's
  * Return:nothing
 */
 void print_square(int size)
