@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_square - print diagonal
  * @n: number of diagonal \'s 
