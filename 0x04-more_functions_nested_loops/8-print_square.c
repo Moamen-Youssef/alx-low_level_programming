@@ -12,7 +12,7 @@ while (counter != size + 1)
 {
 if ( size <= 0)
 {
-_putchar('\n');
+_putchar('\n') ;
 return;
 }
 else
@@ -26,5 +26,4 @@ _putchar('#');
 _putchar('\n');
 counter++;
 }
-_putchar('\n');
 }
