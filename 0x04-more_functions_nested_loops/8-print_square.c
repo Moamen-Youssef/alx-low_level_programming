@@ -1,3 +1,4 @@
+
 #include "main.h"
 /**
  * print_square - print diagonal
@@ -25,4 +26,5 @@ _putchar('#');
 _putchar('\n');
 counter++;
 }
+_putchar('\n');
 }
