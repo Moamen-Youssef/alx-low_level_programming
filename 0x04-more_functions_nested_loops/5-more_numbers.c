@@ -6,7 +6,7 @@
 void more_numbers(void)
 {
 int line = 1;
-while (line != 15)
+while (line != 11)
 {
 int i;
 for (i = 0; i < 15; i++)
