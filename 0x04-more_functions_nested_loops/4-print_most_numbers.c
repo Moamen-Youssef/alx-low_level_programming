@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - print numbers from 0-9 except 2 and 4
- * Return:the multiplication
+ * Return:nothing
 */
 void print_numbers(void)
 {
@@ -11,5 +11,5 @@ for (i = 0; i < 10; i++)
 if (i != 4 && i != 2)
 _putchar(i);
 }
-_putchar("\n");
+_putchar('\n');
 }

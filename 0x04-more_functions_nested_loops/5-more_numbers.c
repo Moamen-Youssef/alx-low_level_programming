@@ -13,7 +13,7 @@ for (i = 0; i < 15; i++)
 {
 _putchar(i);
 }
-printf("\n");
+_putchar('\n');
 line++;
 }
 }
