@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_numbers - print numbers from 0-9
- * Return:the multiplication
+ * Return:nothing
 */
 void print_numbers(void)
 {
@@ -11,4 +11,5 @@ for (i = 0; i < 10; i++)
 _putchar(i);
 }
 _putchar('\n');
+}
 }
