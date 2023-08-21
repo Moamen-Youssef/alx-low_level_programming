@@ -19,7 +19,7 @@ else
 {
 i = ((strlength - 1) / 2) + 1;
 }
-for (i; i < strlength; i++)
+for (; i < strlength; i++)
 {
 printf("%c", str[i]);
 }
