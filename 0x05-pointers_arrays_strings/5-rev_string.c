@@ -10,7 +10,7 @@ void rev_string(char *s)
 {
 int strlength = strlen(s);
 int i;
-char strarr[strlength];
+char strarr[50];
 char *p;
 p = &*s;
 for ( i = strlength; i > 0; i--)
