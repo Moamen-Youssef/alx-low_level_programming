@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_array - prints the array elms
  * @a: the pointer to array
