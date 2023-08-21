@@ -17,9 +17,9 @@ i = half_length;
 }
 else
 {
-i = (strlength - 1) / 2;
+i = ((strlength - 1) / 2) + 1;
 }
-for (i += 1; i < strlength; i++)
+for (i; i < strlength; i++)
 {
 printf("%c", str[i]);
 }
