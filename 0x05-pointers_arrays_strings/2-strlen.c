@@ -8,5 +8,5 @@
 
 int _strlen(char *s)
 {
-return("%d", strlen(s));
+return(strlen(s));
 }
