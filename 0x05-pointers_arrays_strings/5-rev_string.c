@@ -21,5 +21,4 @@ for (i = 0; i < strlength; i++)
 {
 *(p + i) = strarr[i];
 }
-printf("\n");
 }
