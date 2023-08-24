@@ -12,7 +12,7 @@ int i;
 int reversed_arr[408];
 int *arrp;
 arrp = a;
-for (i = n -1; i >= 0; i--)
+for (i = n - 1; i >= 0; i--)
 {
 reversed_arr[n - i - 1] = a[i];
 }
