@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 #include <string.h>
 /**
  * leet - replace some chars
@@ -8,31 +9,21 @@
 char *leet(char *str)
 {
 int i;
+int j;
 int len;
 char *p;
+char litters[] = {'a','e','o','t','l'};
+char nums[5]  = {'4','3','0','7','1'};
 len = strlen(str);
 p = str;
 for (i = 0; i < len; i++)
 {
-if (str[i] == 'a' || str[i] == 'A')
+for (j = 0; j < 5; j++)
 {
-*(p + i) = '4';
+if (str[i] == litters[j] || str[i] == litters[j] - 32)
+{
+*(p + i) = nums[j];
 }
-if (str[i] == 'e' || str[i] == 'E')
-{
-*(p + i) = '3';
-}
-if (str[i] == 'o' || str[i] == 'O')
-{
-*(p + i) = '0';
-}
-if (str[i] == 't' || str[i] == 'T')
-{
-*(p + i) = '7';
-}
-if (str[i] == 'l' || str[i] == 'L')
-{
-*(p + i) = '1';
 }
 }
 return (str);
