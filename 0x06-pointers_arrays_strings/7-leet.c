@@ -32,7 +32,7 @@ if (str[i] == 't' || str[i] == 'T')
 }
 if (str[i] == 'l' || str[i] == 'L')
 {
-*(p + i) = '7';
+*(p + i) = '1';
 }
 }
 return (str);
