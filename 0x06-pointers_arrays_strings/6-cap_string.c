@@ -13,11 +13,11 @@ int j;
 char *p;
 int len = strlen(str);
 char symb[] = {',', ';', '.', '!', '?', '"', '(', ')',
-'{', '}', ' ', '\n'};
+'{', '}', ' ', '\n', '\t'};
 p = str;
 for (i = 0; i <= len; i++)
 {
-for (j = 0; j < 12; j++)
+for (j = 0; j < 13; j++)
 {
 if (str[i] == symb[j])
 {
