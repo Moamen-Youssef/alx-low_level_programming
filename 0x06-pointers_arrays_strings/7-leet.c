@@ -12,8 +12,8 @@ int i;
 int j;
 int len;
 char *p;
-char litters[] = {'a','e','o','t','l'};
-char nums[5]  = {'4','3','0','7','1'};
+char litters[] = {'a', 'e', 'o', 't', 'l'};
+char nums[5]  = {'4', '3', '0', '7', '1'};
 len = strlen(str);
 p = str;
 for (i = 0; i < len; i++)
