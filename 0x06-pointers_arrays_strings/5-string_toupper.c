@@ -15,7 +15,7 @@ len = strlen(str);
 p = str;
 for (i = 0; i < len; i++)
 {
-if(islower(str[i]))
+if (islower(str[i]))
 {
 *(p + i) = toupper(str[i]);
 }
