@@ -9,9 +9,11 @@
 char *string_toupper(char *str)
 {
 int i;
+int len;
 char *p;
-p = &*str;
-for (i = 0; i < strlen(str); i++)
+len = strlen(str);
+p = str;
+for (i = 0; i < len; i++)
 {
 if(islower(str[i]))
 {
