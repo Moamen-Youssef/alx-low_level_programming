@@ -20,7 +20,7 @@ sum1 = a[i * size + i] + sum1;
 }
 for (j = size; j >= 0; j--)
 {
-sum2 = a[i * size - i] + sum2;
+sum2 = a[j * size - j] + sum2;
 }
 printf("%d, %d", sum1, sum2);
 }
