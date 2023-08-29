@@ -3,7 +3,7 @@
 **
  * print_diagsums - print the chess board
  * @a: the array
- * @size: 
+ * @size: suxwk.
  * Return: Nothing.
  */
 void print_diagsums(int *a, int size)
