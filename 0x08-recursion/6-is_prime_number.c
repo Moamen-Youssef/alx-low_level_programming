@@ -2,8 +2,8 @@
 
 /**
  * is_prime_number - find if the num is prime.
- *@n: number to find if it is prime.
  * to_check - to check the prime.
+ *@n: number to find if it is prime.
  *@num: counter.
  * Return:0 or 1.
  */
