@@ -3,6 +3,7 @@
 /**
  * is_prime_number - find if the num is prime.
  *@n: number to find if it is prime.
+ @num: counter.
  * Return:0 or 1.
  */
 int to_check(int n, int num)
@@ -19,7 +20,7 @@ if (n % num != 0)
 {
 return (to_check(n, num + 1));
 }
-return (0); 
+return (0);
 }
 
 int is_prime_number(int n)

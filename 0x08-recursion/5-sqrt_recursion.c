@@ -3,6 +3,7 @@
 /**
  * _sqrt_recursion - print square root.
  *@n: number to get the Sroot.
+ *@sqr: num to get its square.
  * Return:-1 or square root of num.
  */
 int to_check(int n, int sqr)
