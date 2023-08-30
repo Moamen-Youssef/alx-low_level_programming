@@ -3,6 +3,7 @@
 /**
  * to_check - to check the prime.
  *@num: counter.
+ *@n: number to find if it is prime.
  * Return:0 or 1.
 */
 int to_check(int n, int num)
