@@ -14,5 +14,4 @@ return;
 }
 _print_rev_recursion(s + 1);
 printf("%c", s[0]);
-printf("%c", s[0]);
 }
