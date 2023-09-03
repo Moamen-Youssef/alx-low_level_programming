@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - function sum positive args.
+ * main - function to sum positive args.
  * @argc: the command line arguments number
  * @argv: the array of command line strings
- * Return: 0.
-*/
+ * Return: 0 on success, 1 on error.
+ */
+
 
 int main (int argc, char *argv[])
 {
