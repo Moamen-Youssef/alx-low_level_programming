@@ -16,7 +16,7 @@ if (argc == 3)
 {
 mul = mul * atoi(argv[i]);
 }
-else 
+else
 {
 printf("Error\n");
 return (1);

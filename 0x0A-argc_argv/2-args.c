@@ -4,7 +4,7 @@
  * main - function types its arguments
  * @argc: the command line arguments number
  * @argv: the array of command line strings
- * Return: 0.
+ * Return:0.
 */
 
 int main (int argc, char *argv[])
