@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  * @argc: The number of command-line arguments
- * @argv: An array of strings containing the command-line arguments
+ * @argv: An array of strings rguments
  * Return: 0 on success
  */
 
