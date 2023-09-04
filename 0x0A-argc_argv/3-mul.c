@@ -4,7 +4,7 @@
  * main - function mul two args.
  * @argc: the command line arguments number
  * @argv: the array of command line strings
- * Return: 0.
+ * Return: 0 or one.
 */
 
 int main(int argc, char *argv[])
