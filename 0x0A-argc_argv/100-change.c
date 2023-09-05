@@ -23,7 +23,7 @@ if (num - arr_of_money[i] >= 0)
 {
 result++;
 cid = num - arr_of_money[i];
-checker (cid, result);
+checker(cid, result);
 return (result);
 }
 }
