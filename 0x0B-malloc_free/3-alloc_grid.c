@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * print_grid - prints a grid of integers
+ * alloc_grid - prints a grid of integers
  * @width: width of the grid
  * @height: height of the grid
  * Return: Nothing.
@@ -11,9 +11,9 @@ int **alloc_grid(int width, int height)
 {
 int i;
 int j;
-int **mal = (int **)malloc(sizeof(int *) 
-* height); 
-if ((width  == 0 || width < 0) 
+int **mal = (int **)malloc(sizeof(int *)
+* height);
+if ((width  == 0 || width < 0)
 || height == 0 || height < 0)
 {
 return (NULL);
