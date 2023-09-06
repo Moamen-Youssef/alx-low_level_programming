@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - prints a grid of integers
+ * free_grid - prints a grid of integers
  * @grid: width of the grid
  * @height: height of the grid
  * Return: Nothing.

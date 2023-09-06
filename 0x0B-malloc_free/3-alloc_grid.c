@@ -26,7 +26,7 @@ if (new_arr[i] == NULL)
 {
 for (j = 0; j < i; j++)
 {
-free(new_arr[i]);
+free(new_arr[j]);
 }
 free(new_arr);
 return (NULL);
