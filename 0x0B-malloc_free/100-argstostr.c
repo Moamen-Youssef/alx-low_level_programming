@@ -24,7 +24,7 @@ return (av[0]);
 }
 for (i = 0; i < ac; i++)
 {
-len += strlen(av[i]);
+len += strlen(av[i]) + 1;
 }
 str = malloc(sizeof(char) * len);
 if (str == NULL)
