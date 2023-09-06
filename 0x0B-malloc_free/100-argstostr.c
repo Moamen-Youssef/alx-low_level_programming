@@ -18,9 +18,13 @@ if (ac == 0 || av == NULL)
 {
 return (NULL);
 }
+if (ac == 1)
+{
+return (av[0]);
+}
 for (i = 0; i < ac; i++)
 {
-len += atoi(av[i]);
+len += strlen(av[i]);
 }
 str = malloc(sizeof(char) * len);
 strcpy(str, strcat(av[1], "\n"));
@@ -30,4 +34,18 @@ strcat(av[i], "\n");
 strcat(str, av[i]);
 }
 return (str);
+}
+
+int main(int ac, char *av[])
+{
+    char *s;
+
+    s = argstostr(ac, av);
+    if (s == NULL)
+    {
+        return (1);
+    }
+    printf("%s", s);
+    free(s);
+    return (0);
 }
