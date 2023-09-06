@@ -27,6 +27,10 @@ for (i = 0; i < ac; i++)
 len += strlen(av[i]);
 }
 str = malloc(sizeof(char) * len);
+if (str == NULL)
+{
+return (NULL);
+}
 strcpy(str, strcat(av[1], "\n"));
 for (i = 2; i < ac; i++)
 {
@@ -34,4 +38,18 @@ strcat(av[i], "\n");
 strcat(str, av[i]);
 }
 return (str);
+}
+
+int main(int ac, char *av[])
+{
+    char *s;
+
+    s = argstostr(ac, av);
+    if (s == NULL)
+    {
+        return (1);
+    }
+    printf("%s", s);
+    free(s);
+    return (0);
 }
