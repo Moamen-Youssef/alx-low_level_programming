@@ -13,12 +13,11 @@ int i, j;
 int **new_arr = (int **)malloc(sizeof(int *) * height);
 if (new_arr == NULL)
 {
-printf("2");
 return (NULL);
+free(new_arr);
 }
 if (width <= 0 || height <= 0)
 {
-printf("1");
 return (NULL);
 }
 for (i = 0; i < height; i++)
@@ -27,6 +26,7 @@ new_arr[i] = (int *)malloc(sizeof(int) * width);
 if (new_arr[i] == NULL)
 {
 return (NULL);
+free(new_arr);
 }
 for (j = 0; j < width; j++)
 {
