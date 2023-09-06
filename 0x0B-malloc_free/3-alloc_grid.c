@@ -34,4 +34,5 @@ new_arr[i][j] = 0;
 }
 }
 return (new_arr);
+free(new_arr);
 }
