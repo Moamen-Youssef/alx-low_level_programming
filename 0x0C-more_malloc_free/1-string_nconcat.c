@@ -3,11 +3,12 @@
 #include <string.h>
 
 /**
- * string_nconcat - check the code.
- * @s1: str1.
- * @s2: str2.
- * @n: str2.
- * Return: Always 0.
+ * string_nconcat - Concatenate two strings using n amount of s2
+ * @s1: First string
+ * @s2: String to add to end of s1
+ * @n: Amount of s2 to add to s1
+ *
+ * Return: pointer to new area in memory, NULL if it fails
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -25,12 +26,20 @@ return (NULL);
 }
 if (n >= strlen(s2))
 {
-len = len - n +  strlen(s2);
-new_str = malloc(sizeof(char) * len);
 strcpy(new_str, s1);
 strcat(new_str, s2);
 }
 strcpy(new_str, s1);
 strncat(new_str, s2, n);
 return (new_str);
+}
+
+int main(void)
+{
+    char *concat;
+
+    concat = string_nconcat("fff", "School !!!", 112);
+    printf("%s\n", concat);
+    free(concat);
+    return (0);
 }
