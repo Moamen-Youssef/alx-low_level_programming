@@ -3,16 +3,16 @@
 #include <stdlib.h>
 
 /**
- * main - check the code
- *@argc: ....
- *@argv: ....
+ * main - >.....
+ *@argc: .......
+ *@argv: .......
  * Return: Always 0.
  */
 
 int main(int argc, char *argv[])
 {
 int mul;
-if (argc > 3)
+if (argc != 3)
 {
 printf("Error\n");
 exit(98);
