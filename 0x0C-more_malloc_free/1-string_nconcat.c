@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
- * string_nconcat - check the code
- * @s1: string1
- * @s2: s2.
- * Return: >......
+ * string_nconcat - check the code.
+ * @s1: str1.
+ * @s2: str2.
+ * Return: Always 0.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
