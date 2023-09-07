@@ -34,13 +34,3 @@ strcpy(new_str, s1);
 strncat(new_str, s2, n);
 return (new_str);
 }
-
-int main(void)
-{
-    char *concat;
-
-    concat = string_nconcat(NULL , "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
-    return (0);
-}
