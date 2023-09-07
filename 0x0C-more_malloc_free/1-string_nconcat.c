@@ -3,13 +3,13 @@
 #include <string.h>
 
 /**
- * string_nconcat - Concatenate two strings using n amount of s2
+ * string_nconcat - Concatenate two using n amount of s2
  * @s1: First string
  * @s2: String to add to end of s1
  * @n: Amount of s2 to add to s1
- *
  * Return: pointer to new area in memory, NULL if it fails
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 int len = strlen(s1) + n + 1;
