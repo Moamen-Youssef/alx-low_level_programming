@@ -6,16 +6,19 @@
  * string_nconcat - check the code.
  * @s1: str1.
  * @s2: str2.
+ * @n: str2.
  * Return: Always 0.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 int len = strlen(s1) + n + 1;
 char *new_str = malloc(sizeof(char) * len);
+char *empt;
+empt = "";
 if (s1 == NULL)
-s1 = "";
+s1 = empt;
 if (s2 == NULL)
-s2 = "";
+s2 = empt;
 if (new_str == NULL)
 {
 return (NULL);
@@ -30,4 +33,14 @@ strcat(new_str, s2);
 strcpy(new_str, s1);
 strncat(new_str, s2, n);
 return (new_str);
+}
+
+int main(void)
+{
+    char *concat;
+
+    concat = string_nconcat(NULL , "School !!!", 6);
+    printf("%s\n", concat);
+    free(concat);
+    return (0);
 }
