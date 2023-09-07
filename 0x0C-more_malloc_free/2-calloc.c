@@ -9,12 +9,15 @@
  * Return: new arr.
  */
 
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int *new_arr;
 new_arr = (unsigned int *)calloc(nmemb, size);
-if (new_arr == NULL || nmemb == 0 || size == 0)
+if (nmemb == 0 || size == 0)
+{
+return (NULL);
+}
+if (new_arr == NULL)
 {
 return (NULL);
 }
