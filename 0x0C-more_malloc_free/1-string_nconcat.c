@@ -33,4 +33,3 @@ strcpy(new_str, s1);
 strncat(new_str, s2, n);
 return (new_str);
 }
-
