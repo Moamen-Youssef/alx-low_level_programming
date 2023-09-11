@@ -1,0 +1,1 @@
+macros object-like , function-like
