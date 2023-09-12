@@ -17,10 +17,9 @@ if (new != NULL)
 {
 new->name = strdup(name);
 new->age = age;
-new->owner = strdup(owner)
-;
+new->owner = strdup(owner);
 return (new);
 }
 else
-return (NULL); 
+return (NULL);
 }
