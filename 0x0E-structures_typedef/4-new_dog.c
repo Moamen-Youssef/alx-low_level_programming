@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * new_dog - check the code
@@ -16,9 +17,19 @@ if (new != NULL)
 {
 new->name = strdup(name);
 new->age = age;
-new->owner = strdup(owner);
+new->owner = strdup(owner)
+;
 return (new);
 }
 else
 return (NULL); 
+}
+
+int main(void)
+{
+    dog_t *my_dog;
+
+    my_dog = new_dog("Poppy", 3.5, "Bob");
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
+    return (0);
 }
