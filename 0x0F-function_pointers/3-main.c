@@ -4,6 +4,8 @@
 int main(int argc, char* argv[])
 {
 int result;
+int (*ptr)(int, int);
+ptr = get_op_func(argv[2]);
 if (argc != 4)
 {
 printf("Error\n");
@@ -25,7 +27,7 @@ strcmp(argv[2], "%") == 0) &&
 printf("Error\n");
 exit(100);
 }
-result = get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]));
+result = ptr(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", result);
 return (result);
 }
