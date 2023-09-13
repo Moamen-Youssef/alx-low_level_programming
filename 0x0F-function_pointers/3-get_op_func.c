@@ -17,7 +17,7 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i = 0;
-while (ops[i].op < 5)
+while (i < 5)
 {
 if (strcmp(s, ops[i].op) == 0)
 {
