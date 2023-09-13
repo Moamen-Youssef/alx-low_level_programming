@@ -17,7 +17,7 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i = 0;
-while (ops[i].op != NULL)
+while (ops[i].op < 5)
 {
 if (strcmp(s, ops[i].op) == 0)
 {
@@ -25,5 +25,5 @@ return (ops[i].f);
 }
 i++;
 }
-return (NULL);
+return (0);
 }

@@ -25,5 +25,5 @@ exit(99);
 }
 result = ptr(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", result);
-return (result);
+return (0);
 }
