@@ -5,12 +5,12 @@ int main(int argc, char* argv[])
 {
 int result;
 int (*ptr)(int, int);
-ptr = get_op_func(argv[2]);
 if (argc != 4)
 {
 printf("Error\n");
 exit(98);
 }
+ptr = get_op_func(argv[2]);
 if (strcmp(argv[2], "+") != 0 &&
 strcmp(argv[2], "-") != 0 &&
 strcmp(argv[2], "*") != 0 &&
