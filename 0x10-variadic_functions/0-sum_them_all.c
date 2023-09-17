@@ -12,7 +12,7 @@ unsigned int i, total = 0;
 int arg;
 va_list args;
 va_start(args, n);
-for (i = n; i; i--) 
+for (i = n; i; i--)
 {
 if (n == 0)
 {
