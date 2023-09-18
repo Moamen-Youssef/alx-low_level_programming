@@ -28,7 +28,10 @@ if (arg == NULL)
 {
 printf("(nil)");
 }
+else
+{
 printf("%s", arg);
+}
 if (i != n - 1)
 {
 printf("%s", separator);
