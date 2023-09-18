@@ -18,7 +18,7 @@ if (n == 0)
 {
 return (0);
 }
-arg  = va_arg(args, int);
+arg = va_arg(args, int);
 total += arg;
 }
 va_end(args);
