@@ -11,7 +11,6 @@
 int create_file(const char *filename, char *text_content)
 {
 int file, bytes = 0;
-int write_to;
 if (!filename)
 {
 return (-1);
@@ -29,10 +28,6 @@ if (file == -1)
 {
 return (-1);
 }
-write_to = write(file, text_content, bytes);
-if (write_to == -1)
-{
-return (-1);
-}
+write(file, text_content, bytes);
 return (1);
 }
