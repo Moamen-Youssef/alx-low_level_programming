@@ -16,22 +16,20 @@ if (!filename)
 {
 return (-1);
 }
-file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
-if (file == -1)
-{
-return (-1);
-}
 if (text_content == NULL)
 {
-close(file);
-return (1);
+text_content == "";
 }
 while (text_content[0] != "\0")
 {
 bytes++;
 }
-
-write_to = write(STDOUT_FILENO, text_content, bytes);
+file = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
+if (file == -1)
+{
+return (-1);
+}
+write_to = write(file, text_content, bytes);
 if (write_to == -1)
 {
 return (-1);
