@@ -40,7 +40,7 @@ int main(int ac, char **av)
 int res;
 if (ac != 3)
 {
-fprintf(stderr, "Usage: cp %s %s\n", av[1], av[2]);
+fprintf(stderr, "Usage: cp %s %s\n", av[0]);
 exit(97);
 }
 res = copy_to_file(av[1], av[2]);
