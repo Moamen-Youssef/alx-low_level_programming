@@ -18,7 +18,7 @@ fprintf(stderr, "Can't read from file %s\n", filename1);
 exit(98);
 }
 file2 = open(filename2, O_WRONLY | O_CREAT | O_TRUNC, 0644);
-while (file1_data = read(file1,buffer, sizeof(buffer)) > 0)
+while ((file1_data = read(file1,buffer, sizeof(buffer))) > 0)
 {
 if (write(file2, buffer, file1_data) != file1_data)
 {
@@ -29,9 +29,10 @@ exit(99);
 close(file1);
 if (close(file2) == -1)
 {
-fprintf(stderr, "Can't close fd %s\n", file2);
+fprintf(stderr, "Can't close fd %d\n", file2);
 exit(100);
 } 
+return (1);
 }
 
 int main(int ac, char **av)
