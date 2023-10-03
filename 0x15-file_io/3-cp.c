@@ -50,7 +50,7 @@ int main(int ac, char **av)
 int res;
 if (ac != 3)
 {
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+dprintf(STDERR_FILENO, "Usage: cp %s %s\n", av[1], av[2]);
 exit(97);
 }
 res = copy_to_file(av[1], av[2]);
