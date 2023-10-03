@@ -16,7 +16,7 @@ if (!filename)
 {
 return (-1);
 }
-if (!text_content)
+if (text_content == NULL)
 {
 text_content = "";
 }
@@ -25,7 +25,7 @@ while (text_content[bytes] != '\0')
 bytes++;
 }
 file = open(filename, O_WRONLY | O_APPEND);
-if (!file)
+if (file == -1)
 {
 return (-1);
 }
