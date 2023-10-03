@@ -20,14 +20,14 @@ while (text_content[bytes] != '\0')
 {
 bytes++;
 }
-file = open(filename, O_WRONLY | O_APPEND, 0644);
+file = open(filename, O_WRONLY | O_APPEND);
 if (!file)
 {
 return (-1);
 }
 if (!text_content)
 {
-close(file);
+text_content = "";
 return(1);
 }
 write(file, text_content, bytes);
