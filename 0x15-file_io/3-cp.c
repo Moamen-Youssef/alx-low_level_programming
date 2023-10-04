@@ -8,33 +8,33 @@
  */
 int copy_to_file(const char *file_from, const char *file_to)
 {
-int file1, file2;
-int file1_data;
+int file_from, file_to;
+ssize_t file_from_data;
 char buffer[1024];
-file1 = open(file_from, O_RDONLY);
-if (file1 == -1)
+file_from = open(file_from, O_RDONLY);
+if (file_from == -1)
 {
 dprintf(STDERR_FILENO, "Can't read from file %s\n", file_from);
 exit(98);
 }
-file2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0644);
-while ((file1_data = read(file1,buffer, sizeof(buffer))) > 0)
+file_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+while ((file_from_data = read(file_from,buffer, sizeof(buffer))) > 0)
 {
-if (write(file2, buffer, file1_data) < file1_data)
+if (write(file_to, buffer, file_from_data) < file_from_data)
 {
 dprintf(STDERR_FILENO, "Can't write to file %s\n", file_to);
-close(file1);
+close(file_from);
 exit(99);
 }
 }
-if (close(file1) == -1)
+if (close(file_from) == -1)
 {
-dprintf(STDERR_FILENO, "Can't close fd %d\n", file1);
+dprintf(STDERR_FILENO, "Can't close fd %d\n", file_from);
 exit(100);
 }
-if (close(file2) == -1)
+if (close(file_to) == -1)
 {
-dprintf(STDERR_FILENO, "Can't close fd %d\n", file2);
+dprintf(STDERR_FILENO, "Can't close fd %d\n", file_to);
 exit(100);
 }
 return (1);
