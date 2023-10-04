@@ -9,7 +9,7 @@
 int copy_to_file(const char *file_from, const char *file_to)
 {
 int file1, file2;
-ssize_t file1_data;
+int file1_data;
 char buffer[1024];
 file1 = open(file_from, O_RDONLY);
 if (file1 == -1)
@@ -20,9 +20,10 @@ exit(98);
 file2 = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0644);
 while ((file1_data = read(file1,buffer, sizeof(buffer))) > 0)
 {
-if (write(file2, buffer, file1_data) != file1_data)
+if (write(file2, buffer, file1_data) < file1_data)
 {
 dprintf(STDERR_FILENO, "Can't write to file %s\n", file_to);
+close(file1);
 exit(99);
 }
 }
@@ -35,7 +36,7 @@ if (close(file2) == -1)
 {
 dprintf(STDERR_FILENO, "Can't close fd %d\n", file2);
 exit(100);
-} 
+}
 return (1);
 }
 
