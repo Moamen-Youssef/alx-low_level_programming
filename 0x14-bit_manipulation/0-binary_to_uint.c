@@ -10,10 +10,11 @@
  */
 
 unsigned int binary_to_uint(const char *b){
-int i, num = 0, bit, strbit = strlen(b) -1;
+size_t i;  
+int  num = 0, bit, strbit = strlen(b) -1;
 for (i = 0; i < strlen(b); i++) 
 {
-if (isalpha(b[i]) != 0 || b[i] == NULL)
+if (isalpha(b[i]) != 0 || b == NULL)
 {
 return (0);
 }
