@@ -14,12 +14,12 @@ unsigned int binary_to_uint(const char *b)
 {
 size_t i;  
 int  num = 0, bit, strbit = strlen(b) -1;
-for (i = 0; i < strlen(b); i++) 
-{
 if (isalpha(b[i]) != 0 || b == NULL)
 {
 return (0);
 }
+for (i = 0; i < strlen(b); i++) 
+{
 if (b[i] == 49)
 {
 bit = 1;
