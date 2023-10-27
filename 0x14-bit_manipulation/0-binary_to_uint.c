@@ -1,35 +1,30 @@
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-#include <math.h>
-#include <stdlib.h>
 #include "main.h"
-/**
- * binary_to_uint - check the code
- *@b: ....>
- * Return: Always 0.
- */
 
+/**
+ * binary_to_uint - converts a binary number to an
+ * unsigned int.
+ * @b: binary.
+ *
+ * Return: unsigned int.
+ */
 unsigned int binary_to_uint(const char *b)
 {
-size_t i;  
-unsigned int  num = 0, bit, strbit = strlen(b) -1;
-if (isalpha(b[i]) != 0 || b == NULL)
+unsigned int ui;
+int len, base_two;
+if (!b)
+return (0);
+ui = 0;
+for (len = 0; b[len] != '\0'; len++);
+for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
+{
+if (b[len] != '0' && b[len] != '1')
 {
 return (0);
 }
-for (i = 0; i < strlen(b); i++) 
+if (b[len] & 1)
 {
-if (b[i] == 49)
-{
-bit = 1;
+ui += base_two;
 }
-else
-{
-bit = 0;
 }
-num += (bit * pow(2, strbit));
-strbit--;
-}
-return (num);
+return (ui);
 }
