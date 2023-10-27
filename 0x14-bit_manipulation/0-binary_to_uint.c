@@ -13,7 +13,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 size_t i;  
-int  num = 0, bit, strbit = strlen(b) -1;
+unsigned int  num = 0, bit, strbit = strlen(b) -1;
 if (isalpha(b[i]) != 0 || b == NULL)
 {
 return (0);
